@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canculater</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script defer src="./script/app.js"></script>
+</head>
+<body>
+     <form name="calculator" class="form">
+       <input type="text" name="result" class="result">
+       <input type="button" onclick = "calculator.result.value = ''" value="C" class="klavish color1">
+       <input type="button" onclick = "calculator.result.value = calculator.result.value.slice(0,calculator.result.value.length - 1) " value="<=" class="klavish color1">
+       <input type="button" onclick = "calculator.result.value = calculator.result.value / 100 " value="%" class="klavish color1">
+       <input type="button" onclick = "calculator.result.value += '/'" value="/" class="klavish color2">
+       <input type="button" onclick = "calculator.result.value += '7'" value="7" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '8'" value="8" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '9'" value="9" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '*'" value="*"class="klavish color2">
+       <input type="button" onclick = "calculator.result.value += '4'" value="4" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '5'" value="5" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '6'" value="6" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '-'" value="-" class="klavish color2">
+       <input type="button" onclick = "calculator.result.value += '1'" value="1" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '2'" value="2" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '3'" value="3" class="klavish color3">
+       <input type="button" onclick = "calculator.result.value += '+'" value="+" class="klavish color2">
+       <input type="button" onclick = "calculator.result.value += '0'" value="0" class="klavish klavish2 color3">
+       <input type="button" onclick = "calculator.result.value += '.'" value="." class="klavish color3">
+       <input type="button" onclick = "calculator.result.value = eval(calculator.result.value)" value="=" class="klavish color2">
+     </form>
+     </body>
+</html>
